@@ -13,6 +13,7 @@ contract REMarket is ERC721Full, Ownable {
     Counters.Counter token_ids;
 
     address payable foundation_address = msg.sender;
+    uint public bidding_time;
 
     mapping(uint => REAuction) public auctions;
 
@@ -22,7 +23,8 @@ contract REMarket is ERC721Full, Ownable {
     }
 
     function createAuction(uint token_id) public onlyOwner {
-        auctions[token_id] = new REAuction(foundation_address);
+        bidding_time = 10 minutes;
+        auctions[token_id] = new REAuction(bidding_time,foundation_address);
     }
 
     function registerLand(string memory uri) public payable onlyOwner {

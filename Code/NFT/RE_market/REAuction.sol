@@ -34,7 +34,7 @@ contract REAuction {
         uint _biddingTime,
         address payable _beneficiary
     ) public {
-        //removed deployer = msg.sender;
+        //deployer = msg.sender;
         beneficiary = _beneficiary;
         auctionEndTime = now + _biddingTime;
     }
@@ -119,7 +119,7 @@ contract REAuction {
         // 1. Conditions
         require(now >= auctionEndTime, "Auction not yet ended.");
         require(!ended, "auctionEnd has already been called.");
-        //removed require(msg.sender == deployer, "You are not the auction deployer!");
+        //require(msg.sender == deployer, "You are not the auction deployer!");
 
         // 2. Effects
         ended = true;
