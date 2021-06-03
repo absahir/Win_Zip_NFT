@@ -15,29 +15,23 @@ Our group has been hired to do Real Estate analysis on the State of Ohio. By usi
 
 ## Art NFT for Auction
 
-### 1. Bridge
+### 1. John A. Roebling Suspension Bridge in Cincinnati, OH 
 
-![bridge](Photos/bridge.jpeg)
-
-- This NFT also includes ...
-
-### 2. Building
-
-![building](Photos/cbus.png)
+![bridge](Photos/stylized-bridge.png)
 
 - This NFT also includes ...
 
-### 3. Bridge take 2
+### 2. The Ohio Statehouse in Columbus, OH 
 
-![bridge2](Photos/cinci.png)
-
-- This NFT also includes ...
-
-### 4. Water Landscape
-
-![water](Photos/marblehead2.png)
+![building](Photos/stylized-cbus.png)
 
 - This NFT also includes ...
+
+### 3. Marblehead Lighthouse in Marblehead, Ohio
+
+![bridge2](Photos/stylized-marblehead.png)
+
+
 
 
 ---
