@@ -9,6 +9,9 @@ Our group has been hired to do Real Estate analysis on the State of Ohio. By usi
 2. Mercer County, OH
 3. Auglaize County, OH
 
+---
+---
+
 
 ## Art NFT for Auction
 
@@ -35,3 +38,32 @@ Our group has been hired to do Real Estate analysis on the State of Ohio. By usi
 ![water](Photos/marblehead2.png)
 
 - This NFT also includes ...
+
+
+---
+---
+TABLE
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+---
+---
+
+Fancy Checklist
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+---
+
+---
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
