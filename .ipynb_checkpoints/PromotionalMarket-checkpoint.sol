@@ -1,4 +1,4 @@
-pragma solidity ^0.5.5;
+pragma solidity ^ 0.5.5;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/ownership/Ownable.sol";
@@ -12,7 +12,11 @@ contract PromotionalMarket is ERC721Full, Ownable {
 
     Counters.Counter token_ids;
     
-    address payable public beneficiary;
+    address payable public beneficiary = msg.sender;
+    uint public auctionEndTime;
+    
+    address public highestBidder;
+    uint public highestBid;
     
     mapping(uint => PromotionalAuction) public auctions;
     
@@ -22,7 +26,7 @@ contract PromotionalMarket is ERC721Full, Ownable {
     }
     
      function createAuction(uint token_id) public onlyOwner {
-        auctions[token_id] = new PromotionalAuction(beneficiary);
+        auctions[token_id] = new PromotionalAuction(auctionEndTime, beneficiary);
     }
     
      function registerAD(string memory uri) public payable onlyOwner {
@@ -41,22 +45,22 @@ contract PromotionalMarket is ERC721Full, Ownable {
     
      function auctionEnded(uint token_id) public view returns(bool) {
         PromotionalAuction auction = auctions[token_id];
-        return auctionEnded();
+        return auctionEnded(token_id);
     }
     
-    function highestBid(uint token_id) public view AdRegistered(token_id) returns(uint) {
+    function highestBids(uint token_id) public view AdRegistered(token_id) returns(uint) {
         PromotionalAuction auction = auctions[token_id];
-        return highestBid();
+        return highestBids(token_id);
     }
     
     function pendingReturn(uint token_id, address sender) public view AdRegistered(token_id) returns(uint) {
         PromotionalAuction auction = auctions[token_id];
-        return pendingReturn(sender);
+        return pendingReturn(token_id, sender);
     }
     
     function bid(uint token_id) public payable AdRegistered(token_id) {
         PromotionalAuction auction = auctions[token_id];
-        bid.value(msg.value)(msg.sender);
+        auction.bid.value(msg.value);
     }
 
 }

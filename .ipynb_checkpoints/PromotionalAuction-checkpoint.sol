@@ -1,9 +1,10 @@
-pragma solidity ^ 0.5.5;
+pragma solidity  ^ 0.5.5;
 
 contract PromotionalAuction{
 // Parameters of the PromotionalAuction
     address payable public beneficiary;
     uint public auctionEndTime;
+    address deployer;
     
 // Current state of the auctionEndTime
     address public highestBidder;
@@ -17,6 +18,7 @@ contract PromotionalAuction{
     event AuctionEnded(address winner, uint amount);
     
     constructor(uint _biddingTime, address payable _beneficiary) public {
+        deployer = msg.sender;
         beneficiary = _beneficiary;
         auctionEndTime = block.timestamp + _biddingTime;
     }
@@ -40,6 +42,10 @@ contract PromotionalAuction{
     
     }
     
+    function pendingReturn(address sender) public view returns (uint) {
+        return pendingReturns[sender];
+    }
+    
     function withdraw() public returns (bool) {
         uint amount = pendingReturns[msg.sender];
         if(amount > 0){
@@ -48,7 +54,7 @@ contract PromotionalAuction{
         if(!(msg.sender).send(amount)){
             pendingReturns[msg.sender] = amount;
             return false;
-       
+            
         }
         return true;
     }
@@ -58,7 +64,7 @@ contract PromotionalAuction{
             revert("The auction has not ended yet");
         }
         if(ended){
-            revert("The function auctionEnded has already been called")
+            revert("The function auctionEnded has already been called");
         }
         
         ended = true;
