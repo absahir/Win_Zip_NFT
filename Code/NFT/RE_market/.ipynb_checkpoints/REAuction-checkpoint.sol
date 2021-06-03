@@ -4,6 +4,7 @@ contract REAuction {
     // Parameters of the auction. Times are either
     // absolute unix timestamps (seconds since 1970-01-01)
     // or time periods in seconds.
+    address deployer;
     address payable public beneficiary;
     uint public auctionEndTime;
 
