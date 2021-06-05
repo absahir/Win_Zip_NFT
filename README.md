@@ -84,7 +84,7 @@ Below are two short videos of the Real Estate Auction Smart Contracts
 
 * [Analysis](Code/Analysis/Analysis_Notebook.ipynb)
 * [Neural Transfer](Code/Neural_Transfer/tensor.ipynb)
-* [NFT](Code/NFT/RE_Market)
+* [NFT](Code/NFT/RE_market)
 * [Resources](Clean)
 * [Visualization](Files)
 
