@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Win_Zip_NFT
+=======
 # Welcome to OHIO State NFT!
 
 Our group has been hired to do Real Estate analysis on the State of Ohio. By using Linear regression and financial data of the state we were able to determine the top 3 counties.
@@ -67,3 +70,4 @@ As Kanye West said:
 
 > We're living the future so
 > the present is our past.
+>>>>>>> 7eb1d885b53e7782fd832d60eb418dbccf0278a5

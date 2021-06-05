@@ -19,13 +19,11 @@ Our group has been hired to do Real Estate analysis on the State of Ohio. By usi
 
 ![bridge](Photos/stylized-bridge.png)
 
-- This NFT also includes ...
 
 ### 2. The Ohio Statehouse in Columbus, OH 
 
 ![building](Photos/stylized-cbus.png)
 
-- This NFT also includes ...
 
 ### 3. Marblehead Lighthouse in Marblehead, Ohio
 
