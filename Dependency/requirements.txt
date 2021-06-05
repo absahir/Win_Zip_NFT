@@ -1,0 +1,26 @@
+###### Requirements without Version Specifiers ######
+os
+tensorflow
+IPython.display
+matplotlib.pyplot
+matplotlib
+numpy
+PIL.Image
+time
+functools
+tensorflow_hub
+pandas
+pathlib
+seaborn
+statsmodels.stats.outliers_influence
+chart_studio.plotly
+plotly.graph_objs
+pylab
+cufflinks
+sklearn.model_selection
+sklearn.naive_bayes
+pandas.plotting
+statsmodels.tsa.seasonal
+statsmodels.api
+itertools
+warnings

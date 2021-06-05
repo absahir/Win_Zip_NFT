@@ -1,9 +1,33 @@
-<<<<<<< HEAD
-# Win_Zip_NFT
-=======
 # Welcome to OHIO State NFT!
 
 Our group has been hired to do Real Estate analysis on the State of Ohio. By using Linear regression and financial data of the state we were able to determine the top 3 counties.
+
+To run the notebooks, please install the requirements using the command below.
+
+```python -m pip install -r requirements.txt```
+
+Additional programs needed to download/install are in the [Dependency](Dependency/Downloads.md)
+
+---
+---
+
+### Analysis
+
+Time series stationarity tests.
+
+![Box1](Photos/Snip20210604_12.png)
+
+![VIF](Photos/Snip20210604_13.png)
+
+![lineplot](Photos/Snip20210604_3.png)
+
+![test](Photos/Snip20210604_2.png)
+
+National Level Analysis
+
+![USA Zillow](Photos/Graphs_1.PNG)
+
+![USA line](Photos/Graphs_2.PNG)
 
 
 ### Top 3 Counties of places to move to in Ohio per our analysis.
@@ -12,62 +36,55 @@ Our group has been hired to do Real Estate analysis on the State of Ohio. By usi
 2. Mercer County, OH
 3. Auglaize County, OH
 
+![Counties](Photos/Ohio_counties_map.png)
+
 ---
 ---
 
 
 ## Art NFT for Auction
 
-### 1. Bridge
+> Neural style transfer art - an optimization technique used to take two images a content image and a style reference image and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
 
-![bridge](Photos/bridge.jpeg)
+### 1. John A. Roebling Suspension Bridge in Cincinnati, OH 
 
-- This NFT also includes ...
-
-### 2. Building
-
-![building](Photos/cbus.png)
-
-- This NFT also includes ...
-
-### 3. Bridge take 2
-
-![bridge2](Photos/cinci.png)
-
-- This NFT also includes ...
-
-### 4. Water Landscape
-
-![water](Photos/marblehead2.png)
-
-- This NFT also includes ...
+![bridge](Photos/stylized-bridge.png)
 
 
----
----
-TABLE
+### 2. The Ohio Statehouse in Columbus, OH 
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+![building](Photos/stylized-cbus.png)
+
+
+### 3. Marblehead Lighthouse in Marblehead, Ohio
+
+![bridge2](Photos/stylized-marblehead.png)
+
+Promotional NFT’s focus on promoting a place, event, person, or item.
+Our NFT’s have extra goodies per the State of Ohio including:
+1. An art piece (NFT)
+2. One time flights to Ohio to any of the three counties
+3. One time two-day stay with hotel 
+4. A one year access to our real estate information and predictive model.
+
 
 ---
 ---
 
-Fancy Checklist
+## NFT Code
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+Below are two short videos of the Real Estate Auction Smart Contracts
 
----
+![Remix code](Photos/RemixCodeCropped.gif)
 
----
+![Remix code](Photos/RegisterPhotoCropped.gif)
 
-As Kanye West said:
 
-> We're living the future so
-> the present is our past.
->>>>>>> 7eb1d885b53e7782fd832d60eb418dbccf0278a5
+## 9. Link to our code ##
+
+* [Analysis](Code/Analysis/Analysis_Notebook.ipynb)
+* [Neural Transfer](Code/Neural_Transfer/tensor.ipynb)
+* [NFT](Code/NFT/RE_Market)
+* [Resources](Clean)
+* [Visualization](Files)
+
